@@ -1,17 +1,14 @@
-// Write your solution in this file!
-
 // Declare a variable in global scope called customerName using the var keyword
 var customerName = 'bob';
 
 // Write a function that accesses that global customerName variable, and uppercases it
 function upperCaseCustomerName() {
-  customerName = customerName.toUpperCase();
+  return customerName.toUpperCase();
 }
 
 // Write a function that when called, declares a variable called bestCustomer in global scope and assigns it to be 'not bob'
-var bestCustomer;
 function setBestCustomer() {
-  bestCustomer = 'not bob';
+  var bestCustomer = 'not bob';
 }
 
 // Write a function that changes that bestCustomer variable to 'maybe bob'
@@ -24,19 +21,11 @@ const leastFavoriteCustomer = 'alice';
 
 // Write a function that attempts to change that constant
 function changeLeastFavoriteCustomer() {
-  try {
-    leastFavoriteCustomer = 'charlie'; 
-  } catch (e) {
-    console.error(e);
-  }
+  leastFavoriteCustomer = 'charlie'; // This will throw an error
 }
 
 // Test the functions
-console.log(customerName); // Output: bob
-upperCaseCustomerName();
-console.log(customerName); // Output: BOB
+console.log(upperCaseCustomerName()); // Output: BOB
 setBestCustomer();
-console.log(bestCustomer); // Output: not bob
-overwriteBestCustomer();
-console.log(bestCustomer); // Output: maybe bob
+console.log(bestCustomer); // Output: maybe bob (after calling overwriteBestCustomer())
 changeLeastFavoriteCustomer(); // Error: Assignment to constant variable.
