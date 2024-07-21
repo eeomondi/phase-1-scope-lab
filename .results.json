@@ -2,25 +2,25 @@
   "stats": {
     "suites": 6,
     "tests": 5,
-    "passes": 3,
+    "passes": 2,
     "pending": 0,
-    "failures": 2,
-    "start": "2024-07-21T13:49:25.932Z",
-    "end": "2024-07-21T13:49:26.446Z",
-    "duration": 514
+    "failures": 3,
+    "start": "2024-07-21T13:50:57.901Z",
+    "end": "2024-07-21T13:50:58.391Z",
+    "duration": 490
   },
   "tests": [
     {
       "title": "returns the customerName",
       "fullTitle": "Fix the Scope declare customerName to be bob in global scope returns the customerName",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "modifies the customerName variable",
       "fullTitle": "Fix the Scope upperCaseCustomerName() modifies the customerName variable",
-      "duration": 2,
+      "duration": 1,
       "currentRetry": 0,
       "err": {
         "message": "expected 'bob' to equal 'BOB'",
@@ -36,25 +36,30 @@
       "duration": 0,
       "currentRetry": 0,
       "err": {
-        "message": "expected undefined to equal 'not bob'",
+        "message": "expected 'maybe bob' to equal undefined",
         "showDiff": true,
-        "expected": "not bob",
-        "stack": "AssertionError: expected undefined to equal 'not bob'\n    at Context.<anonymous> (test/indexTest.js:25:38)\n    at processImmediate (internal/timers.js:461:21)"
+        "actual": "maybe bob",
+        "stack": "AssertionError: expected 'maybe bob' to equal undefined\n    at Context.<anonymous> (test/indexTest.js:21:38)\n    at processImmediate (internal/timers.js:461:21)"
       }
     },
     {
       "title": "overwrites the best customer",
       "fullTitle": "Fix the Scope overwriteBestCustomer() overwrites the best customer",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "unsuccessfully tries to reassign the least favorite customer",
       "fullTitle": "Fix the Scope changeLeastFavoriteCustomer() unsuccessfully tries to reassign the least favorite customer",
-      "duration": 1,
+      "duration": 4,
       "currentRetry": 0,
-      "err": {}
+      "err": {
+        "message": "expected [Function: changeLeastFavoriteCustomer] to throw an error",
+        "showDiff": true,
+        "expected": null,
+        "stack": "AssertionError: expected [Function: changeLeastFavoriteCustomer] to throw an error\n    at Context.<anonymous> (test/indexTest.js:39:51)\n    at processImmediate (internal/timers.js:461:21)"
+      }
     }
   ],
   "pending": [],
@@ -62,7 +67,7 @@
     {
       "title": "modifies the customerName variable",
       "fullTitle": "Fix the Scope upperCaseCustomerName() modifies the customerName variable",
-      "duration": 2,
+      "duration": 1,
       "currentRetry": 0,
       "err": {
         "message": "expected 'bob' to equal 'BOB'",
@@ -78,10 +83,22 @@
       "duration": 0,
       "currentRetry": 0,
       "err": {
-        "message": "expected undefined to equal 'not bob'",
+        "message": "expected 'maybe bob' to equal undefined",
         "showDiff": true,
-        "expected": "not bob",
-        "stack": "AssertionError: expected undefined to equal 'not bob'\n    at Context.<anonymous> (test/indexTest.js:25:38)\n    at processImmediate (internal/timers.js:461:21)"
+        "actual": "maybe bob",
+        "stack": "AssertionError: expected 'maybe bob' to equal undefined\n    at Context.<anonymous> (test/indexTest.js:21:38)\n    at processImmediate (internal/timers.js:461:21)"
+      }
+    },
+    {
+      "title": "unsuccessfully tries to reassign the least favorite customer",
+      "fullTitle": "Fix the Scope changeLeastFavoriteCustomer() unsuccessfully tries to reassign the least favorite customer",
+      "duration": 4,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected [Function: changeLeastFavoriteCustomer] to throw an error",
+        "showDiff": true,
+        "expected": null,
+        "stack": "AssertionError: expected [Function: changeLeastFavoriteCustomer] to throw an error\n    at Context.<anonymous> (test/indexTest.js:39:51)\n    at processImmediate (internal/timers.js:461:21)"
       }
     }
   ],
@@ -89,21 +106,14 @@
     {
       "title": "returns the customerName",
       "fullTitle": "Fix the Scope declare customerName to be bob in global scope returns the customerName",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "overwrites the best customer",
       "fullTitle": "Fix the Scope overwriteBestCustomer() overwrites the best customer",
-      "duration": 1,
-      "currentRetry": 0,
-      "err": {}
-    },
-    {
-      "title": "unsuccessfully tries to reassign the least favorite customer",
-      "fullTitle": "Fix the Scope changeLeastFavoriteCustomer() unsuccessfully tries to reassign the least favorite customer",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     }
