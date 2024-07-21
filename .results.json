@@ -5,22 +5,22 @@
     "passes": 2,
     "pending": 0,
     "failures": 3,
-    "start": "2024-07-21T13:50:57.901Z",
-    "end": "2024-07-21T13:50:58.391Z",
-    "duration": 490
+    "start": "2024-07-21T13:53:39.603Z",
+    "end": "2024-07-21T13:53:40.124Z",
+    "duration": 521
   },
   "tests": [
     {
       "title": "returns the customerName",
       "fullTitle": "Fix the Scope declare customerName to be bob in global scope returns the customerName",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "modifies the customerName variable",
       "fullTitle": "Fix the Scope upperCaseCustomerName() modifies the customerName variable",
-      "duration": 1,
+      "duration": 2,
       "currentRetry": 0,
       "err": {
         "message": "expected 'bob' to equal 'BOB'",
@@ -67,7 +67,7 @@
     {
       "title": "modifies the customerName variable",
       "fullTitle": "Fix the Scope upperCaseCustomerName() modifies the customerName variable",
-      "duration": 1,
+      "duration": 2,
       "currentRetry": 0,
       "err": {
         "message": "expected 'bob' to equal 'BOB'",
@@ -106,7 +106,7 @@
     {
       "title": "returns the customerName",
       "fullTitle": "Fix the Scope declare customerName to be bob in global scope returns the customerName",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
