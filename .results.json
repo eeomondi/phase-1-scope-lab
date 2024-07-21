@@ -5,9 +5,9 @@
     "passes": 3,
     "pending": 0,
     "failures": 2,
-    "start": "2024-07-21T13:47:54.508Z",
-    "end": "2024-07-21T13:47:55.044Z",
-    "duration": 536
+    "start": "2024-07-21T13:49:25.932Z",
+    "end": "2024-07-21T13:49:26.446Z",
+    "duration": 514
   },
   "tests": [
     {
@@ -45,7 +45,7 @@
     {
       "title": "overwrites the best customer",
       "fullTitle": "Fix the Scope overwriteBestCustomer() overwrites the best customer",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -96,7 +96,7 @@
     {
       "title": "overwrites the best customer",
       "fullTitle": "Fix the Scope overwriteBestCustomer() overwrites the best customer",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },

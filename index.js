@@ -9,8 +9,9 @@ function upperCaseCustomerName() {
 }
 
 // Write a function that when called, declares a variable called bestCustomer in global scope and assigns it to be 'not bob'
+var bestCustomer;
 function setBestCustomer() {
-  var bestCustomer = 'not bob';
+  bestCustomer = 'not bob';
 }
 
 // Write a function that changes that bestCustomer variable to 'maybe bob'
@@ -23,11 +24,18 @@ const leastFavoriteCustomer = 'alice';
 
 // Write a function that attempts to change that constant
 function changeLeastFavoriteCustomer() {
-  leastFavoriteCustomer = 'charlie'; // This will throw an error
+  try {
+    leastFavoriteCustomer = 'charlie'; 
+  } catch (e) {
+    console.error(e);
+  }
 }
 
 // Test the functions
+console.log(customerName); // Output: bob
 console.log(upperCaseCustomerName()); // Output: BOB
 setBestCustomer();
-console.log(bestCustomer); // Output: maybe bob (after calling overwriteBestCustomer())
+console.log(bestCustomer); // Output: not bob
+overwriteBestCustomer();
+console.log(bestCustomer); // Output: maybe bob
 changeLeastFavoriteCustomer(); // Error: Assignment to constant variable.
